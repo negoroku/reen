@@ -327,6 +327,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .works__main:hover .works__main__title {
@@ -396,19 +397,14 @@
 }
 
 .works__sub:hover::after {
-    bottom: 0;
     color: #fff;
     content: "Astor & Yancy\AIdentity";
-    display: inline-block;
-    height: 60px;
-    left: 0;
+    left: 50%;
     line-height: 30px;
-    margin: auto;
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
+    top: 50%;
     white-space: pre;
+    transform: translate(-50%,-50%);
 }
 
     /* with us */
@@ -514,17 +510,14 @@
 }
 
 .footer-img:hover::after {
-    bottom: 0;
     color: #fff;
     content: "+";
     display: inline-block;
-    height: 14px;
-    left: 0;
+    left: 50%;
     margin: auto;
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 14px;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .footer-lineheight {
