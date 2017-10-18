@@ -1,10 +1,16 @@
+body {
+    color: #506a85;
+}
+
 .header-top {
     background-color: #f5f7fa;
-    color: #506a85;
 }
 
 .header-top-inner {
     line-height: 40px;
+}
+
+.inner {
     margin: 0 auto;
     width: 1170px;
 }
@@ -16,48 +22,26 @@
 }
 
 .address-mail {
+    background: url("../img/header/icon-mail-off.png") no-repeat left;
     float: left;
+    padding-left: 20px;
     margin-right: 26px;
 }
 
-.address-mail:hover .address-mail__icon{
+.address-mail:hover{
     background-image: url("../img/header/icon-mail-on.png");
-}
-
-.address-mail:hover span:last-child {
     color: #00bc9c;
-}
-
-.address-mail__icon {
-    background-image: url("../img/header/icon-mail-off.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 30px;
-    vertical-align: middle;
-    width: 30px;
 }
 
 .address-phone {
+    background: url("../img/header/icon-tel-off.png") no-repeat left;
     float: left;
+    padding-left: 20px;
 }
 
-.address-phone:hover .address-phone__icon{
+.address-phone:hover{
     background-image: url("../img/header/icon-tel-on.png");
-}
-
-.address-phone:hover span:last-child {
     color: #00bc9c;
-}
-
-.address-phone__icon {
-    background-image: url("../img/header/icon-tel-off.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 30px;
-    vertical-align: middle;
-    width: 30px;
 }
 
     /* アイコン */
@@ -65,17 +49,12 @@
     float: right;
 }
 
-.header-icons ul {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header-icons li {
+.header-icons > ul > li {
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
     float: left;
-    height: 30px;
+    height: 40px;
     width: 30px;
 }
 
@@ -84,8 +63,7 @@
 }
 
 .facebook:hover {
-    background-color: #4668b3;
-    background-image: url("../img/header/icon-facebook-on.png");
+    background: url("../img/header/icon-facebook-on.png") #4668b3 no-repeat center;
 }
 
 .google {
@@ -93,8 +71,7 @@
 }
 
 .google:hover {
-    background-color: #de5745;
-    background-image: url("../img/header/icon-google-on.png");
+    background: #de5745 url("../img/header/icon-google-on.png") no-repeat center;
 }
 
 .twitter {
@@ -102,8 +79,7 @@
 }
 
 .twitter:hover {
-    background-color: #2fbbed;
-    background-image: url("../img/header/icon-twitter-on.png");
+    background: #2fbbed url("../img/header/icon-twitter-on.png") no-repeat center;
 }
 
 .pinterest {
@@ -111,8 +87,7 @@
 }
 
 .pinterest:hover {
-    background-color: #d94348;
-    background-image: url("../img/header/icon-pinterest-on.png");
+    background: #d94348 url("../img/header/icon-pinterest-on.png") no-repeat center;
 }
 
 .behance {
@@ -120,8 +95,7 @@
 }
 
 .behance:hover {
-    background-color: #3079ff;
-    background-image: url("../img/header/icon-behance-on.png");
+    background: #3079ff url("../img/header/icon-behance-on.png") no-repeat center;
 }
 
 .dribbble {
@@ -129,25 +103,20 @@
 }
 
 .dribbble:hover {
-    background-color: #eb6397;
-    background-image: url("../img/header/icon-dribbble-on.png");
+    background: #eb6397 url("../img/header/icon-dribbble-on.png") no-repeat center;
 }
 
     /* nav */
 .nav-inner {
-    margin: 0 auto;
     position: relative;
     text-align: center;
-    width: 1170px;
 }
 
 .nav-img {
-    bottom: 0;
     left: 0;
-    margin: auto 0;
     position: absolute;
-    right: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav-img:hover {
@@ -155,22 +124,20 @@
 }
 
 .nav-ul {
-    color: #506a85;
     display: inline-block;
     font-size: 15px;
     line-height: 100px;
-    margin: 0 auto;
 }
 
-.nav-li {
+.nav-ul > li {
     float: left;
 }
 
-.nav-li:hover {
+.nav-ul > li:hover {
     color: #00bc9c;
 }
 
-.nav-li:not(:first-child) {
+.nav-ul > li:not(:first-child) {
     margin-left: 44px;
 }
 
@@ -187,8 +154,6 @@
     height: 893px;
     justify-content: center;
     padding: 300px 0;
-    margin: 0 auto;
-    width: 1170px;
 }
 
 .top-img-inner-inner {
@@ -230,7 +195,6 @@
 
     /* サイト説明 */
 .description {
-    color: #506a85;
     text-align: center;
 }
 
@@ -277,20 +241,13 @@
 }
 
 .works__title {
-    color: #506a85;
     font-size: 44px;
     margin-bottom: 40px;
 }
 
 .works__description {
-    color: #506a85;
     font-size: 22px;
     margin-bottom: 75px;
-}
-
-.works__inner {
-    margin: 0 auto;
-    width: 1170px;
 }
 
 .works__main {
@@ -344,7 +301,6 @@
 }
 
 .works-figcaption-text__inner {
-    color: #506a85;
     display: inline-block;
 }
 
@@ -361,42 +317,29 @@
     background-image: url("../img/main/work-main-2.jpg");
 }
 
-.works__sub {
+.works__sub_li {
     display: inline-block;
+    float: left;
     height: 185px;
     position: relative;
     width: 270px;
 }
 
-.works__sub1 {
-    background-image: url("../img/main/work-sub-1.jpg");
-}
-
-.works__sub2 {
-    background-image: url("../img/main/work-sub-2.jpg");
+.works__sub_li:not(:first-child) {
     margin-left: 30px;
 }
 
-.works__sub3 {
-    background-image: url("../img/main/work-sub-3.jpg");
-    margin-left: 30px;
-}
-
-.works__sub4 {
-    background-image: url("../img/main/work-sub-4.jpg");
-    margin-left: 30px;
-}
-
-.works__sub:hover::before {
-    background-color: #00bc9c;
+.works__sub_li:hover::before {
+    background: #00bc9c;
     content: "";
-    display: block;
-    height: 185px;
+    display: inline-block;
+    height: 100%;
     opacity: 0.9;
-    width: 270px;
+    position: absolute;
+    width: 100%;
 }
 
-.works__sub:hover::after {
+.works__sub_li:hover::after {
     color: #fff;
     content: "Astor & Yancy\AIdentity";
     left: 50%;
@@ -409,7 +352,6 @@
 
     /* with us */
 .with-us {
-    color: #506a85;
     height: 260px;
     padding: 120px 0; 
     text-align: center;
@@ -448,13 +390,8 @@
 .footer-top {
     background-color: #354859;
     padding: 75px 0;
-}
-
-.footer-inner {
-    color: #506a85;
+    color: #9aafc4;
     font-size: 14px;
-    margin: 0 auto;
-    width: 1170px;
 }
 
 .footer-content {
@@ -533,9 +470,7 @@
 }
 
 .footer-address__icon {
-    background-image: url("../img/footer/icon-address-off.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("../img/footer/icon-address-off.png") no-repeat center;
     display: inline-block;
     height: 20px;
     vertical-align: middle;
@@ -551,9 +486,7 @@
 }
 
 .footer-phone__icon {
-    background-image: url("../img/footer/icon-tel-off.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("../img/footer/icon-tel-off.png") no-repeat center;
     display: inline-block;
     height: 20px;
     vertical-align: middle;
@@ -569,9 +502,7 @@
 }
 
 .footer-mail__icon {
-    background-image: url("../img/footer/icon-mail-off.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("../img/footer/icon-mail-off.png") no-repeat center;
     display: inline-block;
     height: 20px;
     vertical-align: middle;
@@ -623,15 +554,12 @@
     /* footer-bottom */
 .footer-bottom {
     background-color: #2e3d4c;
-    color: #506a85;
 }
 
 .footer-bottom-inner {
     font-size: 14px;
     height: 74px;
     line-height: 74px;
-    margin: 0 auto;
-    width: 1170px;
 }
 
 .copyright {
